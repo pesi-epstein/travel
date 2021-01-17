@@ -1,0 +1,12 @@
+<div class="dia">
+    <p mat-dialog-title> {{data.HostName}}</p>
+    <div mat-dialog-content>{{data.HostTextDetails}}</div>
+    <br />
+    <div mat-dialog-content>Age: {{getAge()}}</div>
+    <div mat-dialog-content>Gender: {{data.gender}}</div>
+    <div mat-dialog-content>tel: {{data.HostTel}} mail: {{data.HostEmail}}</div>
+
+    <div mat-dialog-actions>
+        <button mat-button (click)="close()" cdkFocusInitial>close</button>
+    </div>
+</div>

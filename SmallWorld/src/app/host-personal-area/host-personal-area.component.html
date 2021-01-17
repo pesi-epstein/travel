@@ -1,0 +1,33 @@
+<div class="center">
+    <div class="example-button-container">
+        <button mat-flat-button color="primary">add <mat-icon>add</mat-icon></button>
+    </div>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{suggestion.Title}}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{suggestion.Description}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <span>I'm visible because I am open</span>
+        <button (click)='edit()' class="btn" mat-icon-button
+            aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <!-- <button class="btn" mat-flat-button color="primary">edit <mat-icon class="icn">edit</mat-icon></button> -->
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
+</div>

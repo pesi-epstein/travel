@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DTO.UserDto">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAAAIACAA=</HashCode>
+      <FileName>UserDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.TravelerDto">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAAAAAAAAAAAAgAQAAAAAAAAAAQAAEAAAAAA=</HashCode>
+      <FileName>TravelerDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.HoursRange">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAA=</HashCode>
+      <FileName>SuggestionDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.AgeRange">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SuggestionDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.SuggestionDto">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAABAAgAESIAAEAAAAAAAIEAAEAAEIAAAAAEAA=</HashCode>
+      <FileName>SuggestionDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.StopDto">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAIAAAAAIQAAAJAAAAgAAAEgAACAAAAAEAAAAA=</HashCode>
+      <FileName>StopDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.ServiceTypeMapperDto">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>ServiceTypeMapperDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.ServiceTypeDto">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAAAAgAAAAAAAAAAAmAA=</HashCode>
+      <FileName>ServiceTypeDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.SelectOptionDto">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SelectOptionDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.RequestDto">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RIAACAAAAAACAASIAEAEAAAAAAIAAAAAAAIAAAAAAEA=</HashCode>
+      <FileName>RequestDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.ParameterTypeDto">
+    <Position X="0.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParameterTypeDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.LocationHostDto">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAQAAAAAAEAAAAAAAAACAACAAAAAAAAAAA=</HashCode>
+      <FileName>LocationHostDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.HostDto">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAAAAAAAAAAAAAEAggQIAAAAABAAAQAAAAAAAAA=</HashCode>
+      <FileName>HostDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.bookedDateDto">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bookedDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.AddressDto">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAACAAAAAAAAgACAAAAAAAAAAA=</HashCode>
+      <FileName>AddressDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DTO.Status">
+    <Position X="7.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Status.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

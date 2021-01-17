@@ -1,0 +1,17 @@
+<mat-toolbar>
+    <mat-grid-list cols="7" rowHeight="64px">
+        <mat-grid-tile class="logo" colspan="1"><img class="img-logo" routerLink="/login" src="../assets/img/logo.png">
+        </mat-grid-tile>
+        <mat-grid-tile colspan="4">
+        </mat-grid-tile>
+        <mat-grid-tile class="buttons" colspan="2">
+            <button mat-flat-button color="primary" routerLink="/login">Log-In</button>
+            <button mat-flat-button color="primary" routerLink="/signup">Sign-Up</button>
+            <button mat-flat-button color="primary" routerLink="/login" (click)="logout()">Log-Out</button>
+
+        </mat-grid-tile>
+    </mat-grid-list>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>

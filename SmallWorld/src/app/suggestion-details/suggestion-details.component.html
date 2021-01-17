@@ -1,0 +1,34 @@
+<div class="p-4">
+    <h2 mat-dialog-title>{{suggestion.Title}}</h2>
+
+    <mat-dialog-content>
+        <div>
+            <p><label>Description: </label> {{suggestion.Description}}</p>
+            <p><label>Range Age: </label> {{suggestion.RangeAge.MinAge}}-{{suggestion.RangeAge.MaxAge}}</p>
+            <p><label>Range Houre: </label> {{suggestion.RangeHours.StartHour}}-{{suggestion.RangeHours.MaxHour}}</p>
+            <p><label>Gender: </label> {{suggestion.Gender}}</p>
+            <p><label>Address:</label> {{suggestion.Country}} {{suggestion.City}} {{suggestion.Street}}</p>
+            <p><label>servicesType: </label>
+                <span *ngFor="let i of suggestion.mapperServices"> {{i.ServiceTypeName}}, </span></p>
+            <p><label>Dates: </label>
+                <span *ngFor="let date of suggestion.bookedDates"> {{date.dateStart|date:'dd/mm/yy'}} -
+                    {{date.dateEnd|date:'dd/mm/yy'}}<br></span> </p>
+        </div>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+        <button mat-stroked-button color="primary" (click)="call()">
+            <mat-icon>phone</mat-icon> Call
+        </button>
+        <button mat-stroked-button color="primary" (click)="email()">
+            <mat-icon> email</mat-icon> Email
+        </button>
+
+        <button mat-stroked-button color="primary" (click)="openDialog()">
+            <mat-icon>contacts</mat-icon> About Me
+        </button>
+        <button mat-stroked-button color="primary" (click)="close()">
+            <mat-icon>close</mat-icon> Close
+        </button>
+    </mat-dialog-actions>
+</div>

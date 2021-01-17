@@ -1,0 +1,6 @@
+<div class="dt">
+    <div *ngFor="let date of bookedDates">
+        <app-date-picker-item [dateRange]="date" (newItemEvent)="addDate($event)">
+        </app-date-picker-item>
+    </div>
+</div>
