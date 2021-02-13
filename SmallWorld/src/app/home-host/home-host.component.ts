@@ -3,6 +3,7 @@ import { Suggestion } from '../models/Suggestion';
 import { SuggestionService } from '../services/suggestion.service';
 import { User } from '../models/User';
 import { Router } from '@angular/router';
+import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home-host',
@@ -35,5 +36,11 @@ export class HomeHostComponent implements OnInit {
   delete(s: Suggestion) {
     this.suggestionService.delete(s.SuggestionID).subscribe((res: Suggestion[]) => this.suggestions = res)
   }
-
+  detail(sug: Suggestion) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.data = {
+      id: sug.SuggestionID,
+      sug: sug
+    };
+  }
 }
