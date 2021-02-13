@@ -55,7 +55,6 @@ namespace SmallWorldWebApi.Controllers
         [Route("Suggestion/{id}")]
         public IHttpActionResult DeleteSuggestion([FromUri] int id,[FromUri] UserDto u)
         {
-            ;
            if( BL.ManageSuggestion.DeleteSuggestion(id))
             return Ok(BL.ManageSuggestion.GetSuggestions(u.UserID));
             return InternalServerError();
