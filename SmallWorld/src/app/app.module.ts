@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -45,10 +46,11 @@ import { SuggestionDetailsComponent } from './suggestion-details/suggestion-deta
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogOverviewExampleDialogComponent } from './dialog-overview-example-dialog/dialog-overview-example-dialog.component';
 
-
-
+import {FullCalendarModule} from 'primeng/fullcalendar';
+import {CalendarModule} from 'primeng/calendar';
+import { TravelerCalendarComponent } from './traveler-calendar/traveler-calendar.component';
 @NgModule({
-  declarations: [
+  declarations: [	
 
     AppComponent,
     LogInComponent,
@@ -67,7 +69,8 @@ import { DialogOverviewExampleDialogComponent } from './dialog-overview-example-
     RequestResultComponent,
     SuggestionDetailsComponent,
     DialogOverviewExampleDialogComponent,
-  ],
+      TravelerCalendarComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -95,7 +98,9 @@ import { DialogOverviewExampleDialogComponent } from './dialog-overview-example-
     ReactiveFormsModule,
     MatDialogModule,
     //NgModel
-
+    MatButtonToggleModule,
+    FullCalendarModule,
+    CalendarModule
   ],
   providers: [
     {
