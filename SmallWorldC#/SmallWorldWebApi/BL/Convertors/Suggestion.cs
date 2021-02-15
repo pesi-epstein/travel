@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DAL;
 using DTO;
 
@@ -46,13 +47,14 @@ namespace BL
                 SuggestionID = model.SuggestionID,
                 Description = model.SuggestionDescreotion,
                 Gender = model.gender,
-               // ServicesTypeName = vss, ServicesType = vs,
+                // ServicesTypeName = vss, ServicesType = vs,
                 Title = model.SuggestionTitle,
-                mapperServices=lstmp,
+                mapperServices = lstmp,
                 City = model.Address.city,
                 Country = model.Address.country,
                 Street = model.Address.street,
                 HostId = model.hostId,
+                // Status = model.SuggestionTravelers == null ? null : model.SuggestionTravelers.FirstOrDefault()?.Status
                 //boo
                 
             };

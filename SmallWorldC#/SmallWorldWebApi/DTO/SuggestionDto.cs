@@ -47,7 +47,8 @@ namespace DTO
         public string Street { get; set; }
         public int HostId { get; set; }
         public List<bookedDate> bookedDates { get; set; }
+        public int? Status { get; set; }
         //public int adressId;
-       // public int 
+        // public int 
     }
 }

@@ -38,3 +38,9 @@ C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DTO\bi
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.pdb
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.dll
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.pdb

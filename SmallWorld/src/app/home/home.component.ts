@@ -8,6 +8,8 @@ import { Suggestion } from '../models/Suggestion';
 import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
 import { SuggestionDetailsComponent } from '../suggestion-details/suggestion-details.component';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,15 +21,16 @@ export class HomeComponent implements OnInit {
 
   constructor(public authService: AuthService, public router: Router,
     public suggestionService: SuggestionService,
-    private dialog: MatDialog) { }
+    private dialog: MatDialog) {}
   users: Host[] = [];
-
   ngOnInit() {
     this.currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
     if (!this.currentUser)
       this.router.navigate(['/login']);
     if (this.currentUser.UserStaus == Status.Host)
       this.router.navigate(['/home-host']);
+    //  this.suggestionService.getAllTravel(this.currentUser.UserID).subscribe((res: any) => {
     this.suggestionService.getAllTravel().subscribe((res: any) => {
       this.suggestions = res.filter(p => p.HostId != this.currentUser.UserID)
       //this.suggestions = res;

@@ -95,3 +95,17 @@ C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\ob
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.dll
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.dll.config
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DTO.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DTO.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.xml
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.pdb

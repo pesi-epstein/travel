@@ -26,6 +26,10 @@ export class SuggestionService {
     return this.http.get(`${environment.apiUrl}/Suggestions/${id}`);
   }
 
+  // getAllTravel(id: number) {
+  //   return this.http.get(`${environment.apiUrl}/SuggestionsAll/${id}`);
+  // }
+
   getAllTravel() {
     return this.http.get(`${environment.apiUrl}/SuggestionsAll`);
   }

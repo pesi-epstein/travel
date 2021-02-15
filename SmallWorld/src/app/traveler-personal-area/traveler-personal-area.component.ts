@@ -28,6 +28,7 @@ export class TravelerPersonalAreaComponent implements OnInit {
       this.router.navigate(['/login']);
     if (this.currentUser.UserStaus == Status.Host)
       this.router.navigate(['/home-host']);
+      // this.suggestionService.getAllTravel(this.currentUser.UserID).subscribe((res: any) => {
     this.suggestionService.getAllTravel().subscribe((res: any) => {
       this.suggestions = res.filter(p => p.HostId == this.currentUser.UserID)
       //this.suggestions = res;

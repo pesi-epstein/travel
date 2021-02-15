@@ -102,5 +102,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="SuggestionTravelers">
+      <EntityTypeMapping TypeName="YMprojectModel.SuggestionTraveler">
+        <MappingFragment StoreEntitySet="SuggestionTraveler">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TravelerId" ColumnName="TravelerId" />
+          <ScalarProperty Name="SuggestionId" ColumnName="SuggestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
