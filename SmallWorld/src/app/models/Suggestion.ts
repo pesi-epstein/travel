@@ -14,6 +14,7 @@ export class Suggestion {
     Country?: string;
     Street?: string;
     City?: string;
+    Status?: number;
     // servicesType: number[];
     //  ServicesTypeName:string[]=[];
     mapperServices: ServiceTypeMapper[];
