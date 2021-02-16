@@ -16,7 +16,11 @@
                     Address: {{item.Country}} {{item.City}} {{item.Street}}
                 </p>
             </mat-card-content>
-            <mat-card-actions style="text-align: right;">
+            <mat-card-actions >
+                <button mat-stroked-button color="primary" (click)="detail(item)">
+                    <mat-icon>accessibility_new</mat-icon>
+                    Traveler
+                </button>
                 <button mat-stroked-button color="primary" (click)="edit(item)">
                     <mat-icon>edit</mat-icon> Edit
                 </button>

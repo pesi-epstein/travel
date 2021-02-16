@@ -11,6 +11,8 @@ import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler
 import { EditPostComponent } from './edit-post/edit-post.component';
 import { HomeHostComponent } from './home-host/home-host.component';
 import { RequestResultComponent } from './request-result/request-result.component';
+import {TravelerCalendarComponent} from './traveler-calendar/traveler-calendar.component';
+
 const routes: Routes = [
   { path: 'login', component: LogInComponent, data: { title: 'Log-in' } },
   { path: 'signup', component: SignUpComponent, data: { title: 'Sign-up' } },
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { title: 'Home' }, canActivate: [AuthLogin] },
   { path: 'home-host', component: HomeHostComponent, data: { title: 'Home-Host' }, canActivate: [AuthLogin] },
   { path: 'result', component: RequestResultComponent, canActivate: [AuthLogin] },
+  {path: 'calendar', component: TravelerCalendarComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
 ];
 

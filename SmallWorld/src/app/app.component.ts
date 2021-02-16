@@ -29,6 +29,7 @@ export class AppComponent {
   };
   logout() {
     localStorage.removeItem('currentUser');
+    this.user=null;
   }
 }
 

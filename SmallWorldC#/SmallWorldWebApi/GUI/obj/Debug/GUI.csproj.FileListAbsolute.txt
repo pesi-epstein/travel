@@ -92,3 +92,22 @@ C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\GUI\ob
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.exe
 C:\Users\pesya.epstein\Downloads\SmallWorld\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\GUI.exe.config
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\GUI.exe
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\GUI.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\BL.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\DTO.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\DAL.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\EntityFramework.dll
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\BL.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\DTO.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\DAL.pdb
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\DAL.dll.config
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\bin\Debug\EntityFramework.xml
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.exe
+C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\GUI\obj\Debug\GUI.pdb

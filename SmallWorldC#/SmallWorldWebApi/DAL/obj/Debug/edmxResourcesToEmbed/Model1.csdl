@@ -78,6 +78,7 @@
     <NavigationProperty Name="HoursRange" Relationship="Self.FK__Suggestio__hours__398D8EEE" FromRole="Suggestions" ToRole="HoursRange" />
     <NavigationProperty Name="ServiceTypesToSuggestions" Relationship="Self.FK__ServiceTy__Sugge__3E52440B" FromRole="Suggestions" ToRole="ServiceTypesToSuggestions" />
     <NavigationProperty Name="bookedDates" Relationship="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7" FromRole="Suggestion" ToRole="bookedDate" />
+    <NavigationProperty Name="SuggestionTravelers" Relationship="YMprojectModel.FK_SuggestionTraveler_Suggestions" FromRole="Suggestion" ToRole="SuggestionTraveler" />
   </EntityType>
   <EntityType Name="Traveler">
     <Key>
@@ -88,6 +89,7 @@
     <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="User" Relationship="Self.FK__Travelers__Trave__267ABA7A" FromRole="Travelers" ToRole="Users" />
+    <NavigationProperty Name="SuggestionTravelers" Relationship="YMprojectModel.FK_SuggestionTraveler_Travelers" FromRole="Traveler" ToRole="SuggestionTraveler" />
   </EntityType>
   <EntityType Name="User">
     <Key>
@@ -242,6 +244,15 @@
       <End Role="Suggestion" EntitySet="Suggestions" />
       <End Role="bookedDate" EntitySet="bookedDates" />
     </AssociationSet>
+    <EntitySet Name="SuggestionTravelers" EntityType="YMprojectModel.SuggestionTraveler" />
+    <AssociationSet Name="FK_SuggestionTraveler_Suggestions" Association="YMprojectModel.FK_SuggestionTraveler_Suggestions">
+      <End Role="Suggestion" EntitySet="Suggestions" />
+      <End Role="SuggestionTraveler" EntitySet="SuggestionTravelers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SuggestionTraveler_Travelers" Association="YMprojectModel.FK_SuggestionTraveler_Travelers">
+      <End Role="Traveler" EntitySet="Travelers" />
+      <End Role="SuggestionTraveler" EntitySet="SuggestionTravelers" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="bookedDate">
     <Key>
@@ -262,6 +273,41 @@
       </Principal>
       <Dependent Role="bookedDate">
         <PropertyRef Name="SuggestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SuggestionTraveler">
+    <Key>
+      <PropertyRef Name="SuggestionId" />
+      <PropertyRef Name="TravelerId" />
+    </Key>
+    <Property Name="SuggestionId" Type="Int32" Nullable="false" />
+    <Property Name="TravelerId" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Suggestion" Relationship="YMprojectModel.FK_SuggestionTraveler_Suggestions" FromRole="SuggestionTraveler" ToRole="Suggestion" />
+    <NavigationProperty Name="Traveler" Relationship="YMprojectModel.FK_SuggestionTraveler_Travelers" FromRole="SuggestionTraveler" ToRole="Traveler" />
+  </EntityType>
+  <Association Name="FK_SuggestionTraveler_Suggestions">
+    <End Type="YMprojectModel.Suggestion" Role="Suggestion" Multiplicity="1" />
+    <End Type="YMprojectModel.SuggestionTraveler" Role="SuggestionTraveler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suggestion">
+        <PropertyRef Name="SuggestionID" />
+      </Principal>
+      <Dependent Role="SuggestionTraveler">
+        <PropertyRef Name="SuggestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SuggestionTraveler_Travelers">
+    <End Type="YMprojectModel.Traveler" Role="Traveler" Multiplicity="1" />
+    <End Type="YMprojectModel.SuggestionTraveler" Role="SuggestionTraveler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Traveler">
+        <PropertyRef Name="TravelerID" />
+      </Principal>
+      <Dependent Role="SuggestionTraveler">
+        <PropertyRef Name="TravelerId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
