@@ -51,12 +51,29 @@ namespace SmallWorldWebApi.Controllers
             return Ok(BL.ManageSuggestion.GetSuggestionsAll());
         }
 
+        [HttpGet]
+        [Route("SuggestionsWithStatus/{travelerId}")]
+        public IHttpActionResult GetSuggestionsWithStatus([FromUri] int travelerId)
+        {
+            return Ok(BL.ManageSuggestion.GetSuggestionsWithStatus(travelerId));
+        }
+
         [HttpDelete]
         [Route("Suggestion/{id}")]
         public IHttpActionResult DeleteSuggestion([FromUri] int id,[FromUri] UserDto u)
         {
            if( BL.ManageSuggestion.DeleteSuggestion(id))
             return Ok(BL.ManageSuggestion.GetSuggestions(u.UserID));
+            return InternalServerError();
+        }
+
+        [HttpPut]
+        [Route("SaveStatus")]
+        public IHttpActionResult AddOrUpdateSuggestionStatus(SuggestionTravelerDto suggestionTravelerDto)
+        {
+            SuggestionTravelerDto st = BL.ManageSuggestion.SaveSuggestionTraveler(suggestionTravelerDto);
+            if (st != null)
+                return Created<SuggestionTravelerDto>("The content inserted into the database successfully", st);
             return InternalServerError();
         }
         //add new suggestation

@@ -109,3 +109,17 @@ C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebA
 C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.dll
 C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.pdb
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.dll.config
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.pdb
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DTO.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DTO.pdb
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.xml
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.pdb

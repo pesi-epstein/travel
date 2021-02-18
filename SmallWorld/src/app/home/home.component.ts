@@ -7,6 +7,7 @@ import { SuggestionService } from '../services/suggestion.service';
 import { Suggestion } from '../models/Suggestion';
 import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
 import { SuggestionDetailsComponent } from '../suggestion-details/suggestion-details.component';
+import { SuggestionTraveler } from '../models/SuggestionTraveler';
 
 
 
@@ -18,10 +19,14 @@ import { SuggestionDetailsComponent } from '../suggestion-details/suggestion-det
 export class HomeComponent implements OnInit {
   currentUser: User;
   suggestions: Suggestion[] = [];
+  approveSuggestions: Suggestion[] = [];
+  events: any[];
+  showCalendar: boolean = false;
+  isReady: boolean = false;
 
   constructor(public authService: AuthService, public router: Router,
     public suggestionService: SuggestionService,
-    private dialog: MatDialog) {}
+    private dialog: MatDialog) { }
   users: Host[] = [];
   ngOnInit() {
     this.currentUser = JSON.parse(localStorage.getItem("currentUser"));
@@ -31,10 +36,24 @@ export class HomeComponent implements OnInit {
     if (this.currentUser.UserStaus == Status.Host)
       this.router.navigate(['/home-host']);
     //  this.suggestionService.getAllTravel(this.currentUser.UserID).subscribe((res: any) => {
-    this.suggestionService.getAllTravel().subscribe((res: any) => {
-      this.suggestions = res.filter(p => p.HostId != this.currentUser.UserID)
+    this.suggestionService.getSuggestionsToTraveler(this.currentUser.UserID).subscribe((res: any) => {
+      this.suggestions = res.filter(p => p.HostId != this.currentUser.UserID);
+      this.approveSuggestions = this.suggestions.filter(s => s.Status == 3);
+      this.events = [];
+      this.suggestions.filter(s => s.Status == 3)?.forEach(s => {
+        s.bookedDates.forEach(d => {
+          this.events.push({
+            id: s.SuggestionID,
+            title: `address: ${s.Country} ${s.City} ${s.Street}`,
+            start: d.dateStart,
+            end: d.dateEnd
+          })
+        });
+      });
+      this.isReady = true;
       //this.suggestions = res;
     })
+    
   }
 
   call() {
@@ -59,6 +78,9 @@ export class HomeComponent implements OnInit {
     this.authService.delete(id).subscribe((users: any[]) => this.users = users);
   }
 
+  onStatusChanged(item: Suggestion) {
+    this.suggestionService.AddOrUpdateSuggestionStatus({ SuggestionId: item.SuggestionID, TravelerId: this.currentUser.UserID, Status: item.Status }).subscribe((res: any) => { });
+  }
 }
 
 

@@ -61,6 +61,7 @@ namespace DAL
                     .Include(ss => ss.Address)
                     .Include(ss => ss.ServiceTypesToSuggestions)
                     .Include(ss => ss.HoursRange)
+                    .Include(ss => ss.SuggestionTravelers)
                     .ToList();
                     return suggestions;
                 }
@@ -144,7 +145,7 @@ namespace DAL
                     int id = suggestion.SuggestionID;
                     using (YMprojectEntities1 entities = new YMprojectEntities1())
                     {
-                        
+
                         //Suggestion ss;
                         var ss = entities.Suggestions.First(s => s.SuggestionID == suggestion.SuggestionID);
                         // ss = suggestion;
@@ -174,11 +175,36 @@ namespace DAL
                 return null;
             }
         }
+
+        public static SuggestionTraveler SaveSuggestionTraveler(SuggestionTraveler suggestionTraveler)
+        {
+            using (YMprojectEntities1 entities = new YMprojectEntities1())
+            {
+                try
+                {
+                    SuggestionTraveler st = entities.SuggestionTravelers.FirstOrDefault(s => s.SuggestionId == suggestionTraveler.SuggestionId && s.TravelerId == suggestionTraveler.TravelerId);
+                    if (st == null)
+                    {
+                        entities.SuggestionTravelers.Add(suggestionTraveler);
+                    }
+                    else
+                    {
+                        st.Status = suggestionTraveler.Status;
+                    }
+                    entities.SaveChanges();
+                    return suggestionTraveler;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
     }
 
 
 }
-    
+
 
 
 

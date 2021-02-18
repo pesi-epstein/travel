@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Suggestion } from '../models/Suggestion';
+import { SuggestionTraveler } from '../models/SuggestionTraveler';
 
 
 @Injectable({
@@ -34,4 +35,11 @@ export class SuggestionService {
     return this.http.get(`${environment.apiUrl}/SuggestionsAll`);
   }
 
+  getSuggestionsToTraveler(travelerId: number) {
+    return this.http.get(`${environment.apiUrl}/SuggestionsWithStatus/${travelerId}`);
+  }
+
+  AddOrUpdateSuggestionStatus(suggestionTraveler: SuggestionTraveler) {
+    return this.http.put(`${environment.apiUrl}/SaveStatus`, suggestionTraveler);
+  }
 }

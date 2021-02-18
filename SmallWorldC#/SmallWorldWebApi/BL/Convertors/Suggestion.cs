@@ -9,7 +9,7 @@ namespace BL
     static public class Suggestion
     {
 
-        public static SuggestionDto ToDTO(DAL.Suggestion model)
+        public static SuggestionDto ToDTO(DAL.Suggestion model, int travelerId = -1)
         {
             //List<int> vs = new List<int>();
             //List<string> vss = new List<string>();
@@ -22,7 +22,7 @@ namespace BL
             //}
             //if (model.ServiceTypesToSuggestions.Count > 0)
             //{
-            //    //ôä éù ùâéàä!!
+            //    //ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½!!
             //    foreach (var item in model.ServiceTypesToSuggestions)
             //    {
             //        vss.Add(item.ServiceTypeList.ServiceTypeName);
@@ -32,14 +32,14 @@ namespace BL
             if (model.ServiceTypesToSuggestions.Count > 0)
             {
                 foreach (var item in model.ServiceTypesToSuggestions)
-               {
+                {
                     string s = "";
 
                     //if (item.ServiceTypeList != null)
                     //    s = item.ServiceTypeList.ServiceTypeName;
                     s = DAL.ManageServicesList.GetServiceNameById(item.ServiceTypeListID);
-                   lstmp.Add(new ServiceTypeMapper() { IdServiceType = item.ServiceTypeListID, ServiceTypeName = s });
-                   
+                    lstmp.Add(new ServiceTypeMapper() { IdServiceType = item.ServiceTypeListID, ServiceTypeName = s });
+
                 }
             }
             SuggestionDto suggestionDto = new SuggestionDto()
@@ -54,14 +54,14 @@ namespace BL
                 Country = model.Address.country,
                 Street = model.Address.street,
                 HostId = model.hostId,
-                // Status = model.SuggestionTravelers == null ? null : model.SuggestionTravelers.FirstOrDefault()?.Status
+                Status = travelerId == -1 ? null : model.SuggestionTravelers?.FirstOrDefault(s => s.TravelerId == travelerId)?.Status
                 //boo
-                
+
             };
             List<DTO.bookedDate> bookedDateDto = new List<DTO.bookedDate>();
             if (model.bookedDates != null && model.bookedDates.Count > 0)
             {
-               
+
                 foreach (var item in model.bookedDates)
                 {
                     bookedDateDto.Add(new DTO.bookedDate()
@@ -105,8 +105,8 @@ namespace BL
 
                 gender = suggestionDto.Gender,
                 hostId = suggestionDto.HostId,
-                
-                
+
+
             };
             //suggestion.ServiceTypesToSuggestions = suggestionDto.ServicesType.ConvertAll<DAL.ServiceTypesToSuggestion>(s =>
             // {
@@ -121,7 +121,7 @@ namespace BL
                 return new ServiceTypesToSuggestion()
                 {
                     ServiceTypeListID = s.IdServiceType,
-                   // ServiceTypeList = new ServiceTypeList() { ServiceTypeListID = s.IdServiceType, ServiceTypeName = s.ServiceTypeName },
+                    // ServiceTypeList = new ServiceTypeList() { ServiceTypeListID = s.IdServiceType, ServiceTypeName = s.ServiceTypeName },
 
                 };
             }

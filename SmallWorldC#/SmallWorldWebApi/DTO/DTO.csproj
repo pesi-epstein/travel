@@ -56,6 +56,7 @@
     <Compile Include="Status.cs" />
     <Compile Include="StopDto.cs" />
     <Compile Include="SuggestionDto.cs" />
+    <Compile Include="SuggestionTravelerDto.cs" />
     <Compile Include="TravelerDto.cs" />
     <Compile Include="UserDto.cs" />
   </ItemGroup>

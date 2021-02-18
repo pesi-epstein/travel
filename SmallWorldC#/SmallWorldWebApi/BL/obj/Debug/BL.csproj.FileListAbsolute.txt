@@ -109,3 +109,17 @@ C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebA
 C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CopyComplete
 C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.dll
 C:\Users\pesya.epstein\Downloads\פרויקט גמר\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.pdb
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.pdb
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.pdb
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll.config
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.pdb
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.xml
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CopyComplete
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.dll
+C:\פרוייקט\travel\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.pdb

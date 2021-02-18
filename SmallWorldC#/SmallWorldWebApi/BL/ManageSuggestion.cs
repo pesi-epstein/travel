@@ -49,6 +49,20 @@ namespace BL
         }
 
         /// <summary>
+        ///  קבלת כל ההצעות עם סטטוס
+        /// </summary>
+        /// <returns></returns>
+        public static List<SuggestionDto> GetSuggestionsWithStatus(int travelerId)
+        {
+            List<SuggestionDto> dto = new List<SuggestionDto>();
+            foreach (var item in DAL.ManageSuggestion.GetSuggestionsAll())
+            {
+                dto.Add(Suggestion.ToDTO(item, travelerId));
+            }
+            return dto;
+        }
+
+        /// <summary>
         /// שמירת הצעה
         /// </summary>
         /// <param name="suggestionDto"></param>
@@ -76,6 +90,16 @@ namespace BL
         public static SuggestionDto UpdateSuggestion(SuggestionDto suggestionDto)
         {
             return Suggestion.ToDTO( DAL.ManageSuggestion.UpdateSuggestion(Suggestion.ToDAL(suggestionDto)));
+        }
+
+        /// <summary>
+        /// שמירת הצעה למטייל
+        /// </summary>
+        /// <param name="suggestionTravelerDto"></param>
+        /// <returns></returns>
+        public static SuggestionTravelerDto SaveSuggestionTraveler(SuggestionTravelerDto suggestionTravelerDto)
+        {
+            return SuggestionTraveler.ToDTO(DAL.ManageSuggestion.SaveSuggestionTraveler(SuggestionTraveler.ToDAL(suggestionTravelerDto)));
         }
 
     }
