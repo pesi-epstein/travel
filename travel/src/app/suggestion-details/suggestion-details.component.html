@@ -11,8 +11,8 @@
             <p><label>servicesType: </label>
                 <span *ngFor="let i of suggestion.mapperServices"> {{i.ServiceTypeName}}, </span></p>
             <p><label>Dates: </label>
-                <span *ngFor="let date of suggestion.bookedDates"> {{date.dateStart|date:'dd/mm/yy'}} -
-                    {{date.dateEnd|date:'dd/mm/yy'}}<br></span> </p>
+                <span *ngFor="let date of suggestion.bookedDates"> {{date.dateStart|date:'MM/dd/yy'}} -
+                    {{date.dateEnd|date:'MM/dd/yy'}}<br></span> </p>
         </div>
     </mat-dialog-content>
 

@@ -17,10 +17,13 @@
                 </p>
             </mat-card-content>
             <mat-card-actions >
-                <button mat-stroked-button color="primary" (click)="detail(item)">
+                {{item.travelers}}
+                <span *ngFor="let d of item.Travelers">
+                <button mat-stroked-button color="primary" (click)="openDialog(d)">
                     <mat-icon>accessibility_new</mat-icon>
                     Traveler
                 </button>
+            </span>
                 <button mat-stroked-button color="primary" (click)="edit(item)">
                     <mat-icon>edit</mat-icon> Edit
                 </button>
