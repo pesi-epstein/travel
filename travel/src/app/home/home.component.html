@@ -1,0 +1,48 @@
+<div class="dv">
+    <div class="ml-5">
+        <button class="btn" mat-raised-button color="primary" (click)="req()">
+            <mat-icon>search</mat-icon> search
+        </button>
+        <button class="btn" mat-raised-button color="primary" (click)="showCalendar=true">
+            <mat-icon>
+                <!--date_range-->calendar_today
+            </mat-icon> my calendar
+        </button>
+    </div>
+    <div class="div">
+        <div class="row ml-5 mr-5 mt-1">
+            <mat-card class="example-card col-3 m-3" *ngFor="let item of suggestions">
+                <mat-card-header style="text-align: center;display: block;">
+                    <mat-card-title>{{item.Title}}</mat-card-title>
+                    <mat-card-subtitle>{{item.Description}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        Address: {{item.Country}} {{item.City}} {{item.Street}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions style="text-align: right;">
+                    <div class="toggle">
+                        <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style"
+                            [(ngModel)]="item.Status" (change)="onStatusChanged(item)">
+                            <mat-button-toggle [value]="1">Refuse</mat-button-toggle>
+                            <mat-button-toggle [value]="2">Maybe</mat-button-toggle>
+                            <mat-button-toggle [value]="3">Approve</mat-button-toggle>
+                        </mat-button-toggle-group>
+                    </div>
+                    <button mat-stroked-button color="primary" (click)="detail(item)">
+                        <mat-icon>edit</mat-icon> Details
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div class="warp-calendar" [hidden]="!showCalendar" *ngIf="isReady"
+    [ngClass]="expanding?'expanding-warp-calendar':'no-expanding-warp-calendar' ">
+
+    <app-traveler-calendar class="display-calendar" [events]="events" (expand)="expanding = !expanding"
+        (close)="showCalendar=false">
+    </app-traveler-calendar>
+</div>

@@ -1,0 +1,35 @@
+.calendar {
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.fc .fc-toolbar .fc-button {
+    margin: 5px;
+}
+
+button {
+    border: 1px solid;
+}
+
+::ng-deep {
+    .fc .fc-toolbar .fc-button {
+        background: #3f51b5;
+        border-color: #3f51b5;
+    }
+    .fc .fc-toolbar .fc-button.fc-dayGridMonth-button.fc-button-active {
+        background: #3f51b5;
+        border-color: #3f51b5;
+    }
+    .fc .fc-toolbar .fc-button.fc-timeGridWeek-button.fc-button-active{
+        background: #3f51b5;
+        border-color: #3f51b5;
+    }
+    .fc .fc-toolbar .fc-button.fc-timeGridDay-button.fc-button-active{
+        background: #3f51b5;
+        border-color: #3f51b5;
+    }
+    .fc .fc-view-container .fc-event {
+        background: blue;
+        border-color: blue;
+    }
+}

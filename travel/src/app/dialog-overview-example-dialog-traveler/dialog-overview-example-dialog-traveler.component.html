@@ -1,0 +1,9 @@
+<div class="dia">
+    <h1 mat-dialog-title>{{data.TravelerName}}</h1>
+    <div mat-dialog-content>Age: {{getAge()}}</div>
+    <div mat-dialog-content>Gender: {{data.gender}}</div>
+<br/>
+    <div mat-dialog-actions>
+        <button mat-button (click)="close()" cdkFocusInitial>close</button>
+    </div>
+</div>
